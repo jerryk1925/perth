@@ -246,6 +246,7 @@
   justify-content: flex-start;
   align-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .header__menu_item a {
