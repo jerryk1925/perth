@@ -11,27 +11,55 @@
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <div class="header__wrapper">
-        <div class="header">
+    <div class="header__wrapper" id="uptop">
+        <div class="header" id="home">
             <div class="header__top">
                 <div class="header__top_logo">
                     <div class="header__top_logo-text">p</div>
                 </div>
-                <div class="header__top_nav"></div>
+                <div class="header__top_nav">
+                    <i class="fas fa-align-justify bigwhite"></i>
+                </div>
             </div>
             <div class="header__content">
                 <div class="header__content_name">Meet Perth,</div>
-                <div class="header__content_about">A stupidly simple, flat PSD. Oh yeah, it's <span>free</span> too!</div>
+                <div class="header__content_about">A stupidly simple, flat PSD. Oh yeah, it's
+                    <span>free</span> too!</div>
                 <div class="header__content_form">
-                    <button class="header__content_from-btn">DOWNLOAD<i class="fas fa-cloud-download-alt lefticon fa-sm"></i></button>
+                    <button class="header__content_from-btn">DOWNLOAD
+                        <i class="fas fa-cloud-download-alt lefticon fa-sm"></i>
+                    </button>
                 </div>
             </div>
             <div class="header__mobile">
                 <img src="img/iphone.png" alt="iphone">
             </div>
+            <div class="header__menu" >
+                <div class="header__menu_close">
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="header__menu_center" id="menu">
+                    <div class="header__menu_item" href="#home">
+                        <i class="fas fa-home  fa-inverse circle"></i>
+                        <a>home</a>
+                    </div>
+                    <div class="header__menu_item" href="#about">
+                        <i class="far fa-heart fa-inverse circle"></i>
+                        <a>about me</a>
+                    </div>
+                    <div class="header__menu_item" href="#portfolio">
+                        <i class="fas fa-desktop  fa-inverse circle"></i>
+                        <a>portfolio</a>
+                    </div>
+                    <div class="header__menu_item" href="#drop">
+                        <i class="far fa-envelope  fa-inverse circle"></i>
+                        <a>drop me a line</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="about__wrapper">
+    <div class="about__wrapper" id="about">
         <div class="about">
             <div class="about__inform">
                 <div class="about__inform_caption">A Longwinded Header</div>
@@ -42,14 +70,16 @@
                 </div>
             </div>
             <div class="about__ipad">
-                <img src="img/ipad2.png" alt="ipad" style="z-index: 1">
+                <img src="img/ipad2.png" alt="ipad" style="z-index: 1" class="about__ipad_img">
+                <img src="img/ipad.png" alt="ipad" style="z-index: 1" class="about__ipad_img2">
             </div>
         </div>
     </div>
-    <div class="portfolio__wrapper">
+   
+    <div class="portfolio__wrapper" id="portfolio">
         <div class="portfolio">
             <div class="portfolio__devices">
-                    <img src="img/devices.png" alt="ipad">
+                    <img src="img/devices.png" alt="ipad" class="portfolio__devices_img">
             </div>
             <div class="portfolio__inform">
                 <div class="portfolio__inform_caption">Get a Dog Up Ya'</div>
@@ -61,6 +91,7 @@
             </div>
         </div>
     </div>
+    
     <div class="donate__wrapper">
         <div class="donate">
             <div class="donate__title">
@@ -73,7 +104,8 @@
             </div>
         </div>
     </div>
-    <div class="contact__wrapper">
+     
+    <div class="contact__wrapper" id="drop">
         <div class="contact">
             <div class="contact__icons">
                 <div class="contact__icons_item"><i class="fab fa-dribbble size fa-lg"></i></div>
@@ -83,15 +115,21 @@
             </div>
             <div class="contact__subscription">
                 <div class="contact__subscription_name">Newsletter Subscription</div>
-                <input type="email" placeholder="Enter Email"><i class="fas fa-envelope absolute"></i>
+                <input type="email" placeholder="Enter Email"><i class="fas fa-envelope absolute"></i><span class="absoluteline">|</span>
             </div>
         </div>
     </div>
+
     <div class="footer__wrapper">
-        <div class="footer">
-            <div class="footer">2013 Perth. Breeding pixels since the naughties</div>
-            <div class="footer"></div>
+        <div class="footer" id="gotop">
+            <div class="footer__text">&copy; 2013 <span>Perth.</span> <i>Breeding pixels since the naughties</i></div>
+            <div class="footer__scroll"  ><a href="#uptop"><i class="fas fa-angle-up totop"></i></a></div>
         </div>
     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="main.js">
+    </script>
 </body>
 </html>
